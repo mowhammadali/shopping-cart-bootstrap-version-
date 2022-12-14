@@ -8,7 +8,7 @@ import {BsMoonStarsFill} from "react-icons/bs";
 import {MdWbSunny} from "react-icons/md";
 
 // import context
-import { ThemeContext } from '../App';
+import { ThemeContext} from './Context/ThemeContextProvider';
 
 const Navbar = () => {
     const [dark , themeHandler] = useContext(ThemeContext);

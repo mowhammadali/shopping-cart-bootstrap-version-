@@ -3,8 +3,8 @@ import { Link , useParams } from 'react-router-dom';
 import styled from 'styled-components';
 
 // import context
-import {ProductContext} from "../App";
-import {ThemeContext} from "../App";
+import {ProductContext } from "./Context/ProductContextProvider";
+import {ThemeContext} from "./Context/ThemeContextProvider";
 
 const Details = () => {
     const params = useParams();
@@ -22,7 +22,7 @@ const Details = () => {
                 <p className='my-4'>{description}</p>
                 <h6 className='mb-4'><span className={`${dark ? "text-warning" : "text-danger"}`}>Category</span>: {category}</h6>
                 <div className='d-flex align-items-center justify-content-between'>
-                    <span className={`badge py-2 px-4 fs-5 ${dark ? "text-bg-success": "text-bg-dark"}`}>{price} $</span>
+                    <span className={`badge py-2 px-4 fs-6 ${dark ? "text-bg-success": "text-bg-dark"}`}>{price} $</span>
                     <Link to="/products" className={`fw-bold btn ${dark ? "btn-warning" : "btn-danger"}`}>Back to Store</Link>
                 </div>
             </div>
