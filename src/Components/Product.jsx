@@ -23,7 +23,7 @@ const Product = (props) => {
     return (
         <Col className='col-12 col-sm-6 col-md-4 d-flex justify-content-center'>
             <Card className='card p-3 rounded-4 shadow'>
-                <Card.Img variant="top" alt="img" src={image} 
+                <Card.Img variant="top" alt="product" src={image} 
                 className="image-card rounded-4 mb-2" />
                 <p className='fs-4'>{shortener(title)}</p>
                 <p className='h5 mb-3'>{price} $</p>

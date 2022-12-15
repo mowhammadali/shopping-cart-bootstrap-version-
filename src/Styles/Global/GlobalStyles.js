@@ -11,9 +11,7 @@ export const GlobalStyles = createGlobalStyle`
 body {
   background-color: ${props => props.theme.bgPrimary};
   margin: 0;
-  font-family: cursive , BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
