@@ -1,8 +1,6 @@
 import { useEffect , useState } from "react";
 import axios from "axios";
 
-const URL = "https://fakestoreapi.com/products";
-
 export const useFetch = url => {
     const [apiData , setApiData] = useState([]);
     const [loading , setLoading] = useState(true);

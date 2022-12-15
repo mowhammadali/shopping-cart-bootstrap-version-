@@ -13,6 +13,7 @@ import { GlobalStyles } from "./Styles/Global/GlobalStyles";
 import Navbar from './Components/Navbar';
 import Store from './Components/Store';
 import Details from './Components/Details';
+import ShopCart from './Components/ShopCart';
 
 const App = () => {
     return (
@@ -24,6 +25,7 @@ const App = () => {
                     <Routes>
                         <Route path='/products' element={<Store />}/>
                         <Route path='/products/:id' element={<Details />}/>
+                        <Route path='/cart' element={<ShopCart />}/>
                         <Route path='*' element={<Navigate to="/products" replace/>}/>
                     </Routes>
                 </CartContextProvider>
