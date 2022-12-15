@@ -22,7 +22,7 @@ const Details = () => {
             <div className='col align-self-center'>
                 <h5>{title}</h5>
                 <p className='my-4'>{description}</p>
-                <h6 className='mb-4'><span className={`${dark ? "text-warning" : "text-danger"}`}>Category</span>: {category}</h6>
+                <h6 className='mb-4'><span className={`${dark ? "text-warning" : "text-success"}`}>Category</span>: {category}</h6>
                 <div className='d-flex align-items-center justify-content-between'>
                     <span className={`badge py-2 px-4 fs-6 ${dark ? "text-bg-success": "text-bg-dark"}`}>{price} $</span>
                     <Link to="/products" className={`fw-bold btn ${dark ? "btn-warning" : "btn-success"}`}>Back to Store</Link>
